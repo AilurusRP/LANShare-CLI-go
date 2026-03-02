@@ -2,7 +2,7 @@ package server
 
 import (
 	"fmt"
-	"lanworker/info"
+	"lanshare/info"
 	"net/http"
 	"strings"
 )
@@ -16,7 +16,7 @@ func ServeWebpage(webPath string) {
 		http.ServeFile(w, r, webPath+"index.html")
 	})
 
-	fmt.Println("The LANWorker webpage is now running,")
-	fmt.Printf("visit http://%s%s/ to use LANWorker-web. \n", info.IP, info.PORT)
-	fmt.Print("Make sure your device is in the same LAN with LANWorker-CLI.\n\n")
+	fmt.Println("The LANShare webpage is now running,")
+	fmt.Printf("visit http://%s%s/ to use LANShare-web. \n", info.IP, info.PORT)
+	fmt.Print("Make sure your device is in the same LAN with LANShare-CLI.\n\n")
 }

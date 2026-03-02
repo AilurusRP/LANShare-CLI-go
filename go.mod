@@ -1,4 +1,4 @@
-module lanworker
+module lanshare
 
 go 1.20
 

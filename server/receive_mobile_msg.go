@@ -28,8 +28,8 @@ func receiveMobileMsg() {
 		w.Write(response)
 
 		fmt.Println("----------------------------------------------------")
-		fmt.Println("Received a message from LANWorker-mobile:")
-		fmt.Println("-------------MESSAGE FROM LANWorker-mobile-------------")
+		fmt.Println("Received a message from LANShare-mobile:")
+		fmt.Println("-------------MESSAGE FROM LANShare-mobile-------------")
 		fmt.Println(receivedMsg.Msg)
 		fmt.Println("----------------------------------------------------")
 	})

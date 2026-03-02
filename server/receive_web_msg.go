@@ -28,8 +28,8 @@ func receiveWebMsg() {
 		w.Write(response)
 
 		fmt.Println("----------------------------------------------------")
-		fmt.Println("Received a message from LANWorker-web:")
-		fmt.Println("-------------MESSAGE FROM LANWorker-web-------------")
+		fmt.Println("Received a message from LANShare-web:")
+		fmt.Println("-------------MESSAGE FROM LANShare-web-------------")
 		fmt.Println(receivedMsg.Msg)
 		fmt.Println("----------------------------------------------------")
 	})

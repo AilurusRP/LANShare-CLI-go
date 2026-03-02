@@ -3,8 +3,8 @@ package main
 import (
 	"flag"
 	"fmt"
-	"lanworker/info"
-	"lanworker/server"
+	"lanshare/info"
+	"lanshare/server"
 	"os/user"
 )
 
@@ -19,11 +19,11 @@ func main() {
 	}
 	fmt.Println(qrString)
 
-	// If you need to run LANWorker-web,
+	// If you need to run LANShare-web,
 	// the path to the web resources should be passed from the command line.
 	// Example:
-	//     $ LANWorker-CLI --path /var/www/LANWorker-web
-	webPath := flag.String("path", "", "the path of the LANWorker-web directory")
+	//     $ LANShare-CLI --path /var/www/LANShare-web
+	webPath := flag.String("path", "", "the path of the LANShare-web directory")
 	flag.Parse()
 	if *webPath != "" {
 		server.ServeWebpage(*webPath)
@@ -33,7 +33,7 @@ func main() {
 			fmt.Println(err)
 			return
 		}
-		server.ServeWebpage(currentUser.HomeDir + "/LANWorker-web")
+		server.ServeWebpage(currentUser.HomeDir + "/LANShare-web")
 	}
 	server.StartServer()
 }
